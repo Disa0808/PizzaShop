@@ -1,5 +1,4 @@
-function add_to_cart(id)
-{ 
+function add_to_cart(id){ 
   var key = 'product_' + id;
   var x = window.localStorage.getItem(key);
   x = x * 1 + 1;
@@ -11,8 +10,7 @@ function add_to_cart(id)
 
 
 // calculate count of products in cart
-function cart_get_number_of_items()
-{
+function cart_get_number_of_items(){
   var cnt = 0;
   for(var i = 0; i < window.localStorage.length; i++)
   {
@@ -29,8 +27,7 @@ function cart_get_number_of_items()
 
 
 
-function cart_get_orders()
-{
+function cart_get_orders(){
   var orders = '';
   for(var i = 0; i < window.localStorage.length; i++)
   {

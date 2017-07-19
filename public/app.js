@@ -52,3 +52,9 @@ function update_orders_button(){
   $('#orders_button').val(text);
 
 }
+
+
+function cancel_order(){
+  alert('a');
+  return false;
+}
